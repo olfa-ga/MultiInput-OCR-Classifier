@@ -1,10 +1,10 @@
 # 🧾 OCR Insurance Code Classification  
 ### Multi-Input Deep Learning Model (PyTorch)
 
-![Python](https://img.shields.io/badge/python-3.13-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
-![GitHub last commit](https://img.shields.io/github/last-commit/olfa-ga/MultiInput-OCR-Classifier)
-![GitHub repo size](https://img.shields.io/github/repo-size/olfa-ga/MultiInput-OCR-Classifier)
+![Python](https://img.shields.io/badge/Python-3.13-blue)
+![PyTorch](https://img.shields.io/badge/PyTorch-1.15-orange)
+![CNN](https://img.shields.io/badge/CNN-implemented-brightgreen)
+![Streamlit](https://img.shields.io/badge/Streamlit-app-lightblue)
 
 This project implements a **multi-input OCR classifier** designed to recognize and classify characters from insurance-related documents.  
 It combines **image features** and an additional **type vector** to improve prediction accuracy.

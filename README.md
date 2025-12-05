@@ -36,7 +36,7 @@ To train the model:
 ```bash
 python src/train.py
 
-
+---
 ## 🌐 Streamlit App
 
 ```bash

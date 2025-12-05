@@ -1,49 +1,44 @@
-# OCR Insurance ID Classifier
+# 🧾 OCR Insurance Code Classification  
+### Multi-Input Deep Learning Model (PyTorch)
 
-A multi-input OCR classifier that predicts the type of insurance (life, home, auto, health, other) based on scanned insurance ID images.  
-Built with **PyTorch** for model training and **Streamlit** for an interactive web interface.
-
----
-
-## 🚀 Features
-
-- OCR image classification with a multi-input neural network
-- Data augmentation to improve performance
-- Trained model saved in `saved_models/ocr_model.pth`
-- Streamlit interface for easy image upload and prediction
-- Notebook demo for visualizing model predictions and dataset
+This project implements a **multi-input OCR classifier** designed to recognize and classify characters from insurance-related documents.  
+It combines **image features** and an additional **type vector** to improve prediction accuracy.
 
 ---
 
-Create a virtual environment :
+## 🎯 Overview
 
-python -m venv venv
-venv\Scripts\activate  # Windows
-# source venv/bin/activate  # Linux / Mac
+The model uses **two inputs**:
 
+- **Grayscale Image** → processed through a CNN  
+- **Type Vector** → auxiliary metadata describing the sample  
 
-Upgrade pip and install dependencies:
+Both inputs are fused before classification, resulting in a **2-class prediction**.
 
-python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
+---
 
-🏃 Running the Project
-1. Train the Model 
+## 📓 Demo Notebook
+
+Use **OCR_Insurance_Demo.ipynb** to:
+
+- Load the dataset  
+- Visualize images and type vectors  
+- Load the trained OCR model  
+- Run predictions  
+- Display real vs predicted labels  
+
+---
+
+## 🎯 Training
+
+To train the model:
+
+```bash
 python src/train.py
 
-2. Launch the Streamlit App
-python -m streamlit run streamlit_app/app.py
 
+## 🌐 Streamlit App
 
-📈 Notebook Demo
-
-Check out notebooks/Demo.ipynb for:
-
-Loading and visualizing the dataset
-
-Testing model predictions on sample images
-
-Exploring performance metrics (Accuracy, F1-score, etc.)
-
-
-
+```bash
+cd streamlit_app
+streamlit run app.py

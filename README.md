@@ -41,7 +41,7 @@ To train the model:
 ```bash
 python src/train.py
 
-
+```
 
 ## 🌐 Streamlit App
 
@@ -51,4 +51,4 @@ A simple interactive interface is provided. To run the app, use the following co
 cd streamlit_app
 streamlit run app.py
 
-
+```
